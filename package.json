@@ -1,0 +1,15 @@
+{
+  "name": "lighthouse",
+  "version": "0.0.1",
+  "description": "Use Lighthouse as a reporter, send notifications on hipchat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Crisoforo Gaspar Hernandez <hello@crisoforo.com> (http://crisoforo.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "node-fetch": "^1.6.3",
+    "uniqid": "^4.1.1"
+  }
+}

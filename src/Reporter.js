@@ -1,4 +1,4 @@
-const Report = require('./report');
+const Report = require('./Report');
 const Hipchat = require('./Hipchat');
 
 function Reporter( request, reply ) {

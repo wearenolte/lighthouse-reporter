@@ -4,12 +4,22 @@
   "description": "Use Lighthouse as a reporter, send notifications on hipchat",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon index.js"
   },
   "author": "Crisoforo Gaspar Hernandez <hello@crisoforo.com> (http://crisoforo.com/)",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
+    "boom": "^4.3.1",
+    "hapi": "^16.1.1",
+    "joi": "^10.4.1",
     "node-fetch": "^1.6.3",
     "uniqid": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "engines": {
+    "node": "7.x"
   }
 }

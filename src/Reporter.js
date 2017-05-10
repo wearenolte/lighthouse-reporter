@@ -9,6 +9,7 @@ async function Reporter( request, reply ) {
     url: request.query.site,
     pingback: `${base}/verification/?hipchat=${request.query.hipchat}`,
   }).run();
+  console.log(`Pinback: ${base}/verification/?hipchat=${request.query.hipchat}`);
 
   // Set error as default.
   let notificationOpts = {

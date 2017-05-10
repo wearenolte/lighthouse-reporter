@@ -21,11 +21,6 @@ module.exports = [
     path: '/verification/',
     handler: Verification,
     config: {
-      validate: {
-        query: {
-          hipchat: Joi.string().required(),
-        }
-      }
     }
   }
 ]

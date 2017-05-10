@@ -7,7 +7,7 @@ async function Reporter( request, reply ) {
   const result = await new Report({
     k: process.env.WEB_PAGE_TEST_KEY || '', // k means KEY
     url: request.query.site,
-    pingback: `${base}/verification/?hipchat=${request.query.hipchat}`,
+    pingback: `${base}/verification/`,
   }).run();
   console.log(`Pinback: ${base}/verification/?hipchat=${request.query.hipchat}`);
 

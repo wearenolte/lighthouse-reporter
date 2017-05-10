@@ -20,7 +20,7 @@ async function Reporter( request, reply ) {
 
   // Update notificationOptions if was a success
   if ( 'statusCode' in result && result.statusCode === 200 ) {
-    let notificationOpts = Object.assign({}, notificationOpts, {
+    notificationOpts = Object.assign({}, notificationOpts, {
       status: 'Started',
       description: 'Your web page performance test has started.',
       url: result.data.userUrl,

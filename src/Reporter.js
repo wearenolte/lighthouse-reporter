@@ -23,7 +23,7 @@ async function Reporter( request, reply ) {
   if ( 'statusCode' in result && result.statusCode === 200 ) {
     notificationOpts = Object.assign({}, notificationOpts, {
       status: 'Started',
-      description: 'Your web page performance test has started.',
+      description: `The performance tests for ${request.query.site} has started.`,
       url: result.data.userUrl,
     });
   }

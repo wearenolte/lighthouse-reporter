@@ -18,9 +18,14 @@ module.exports = [
   }, 
   {
     method: 'GET',
-    path: '/verification/',
+    path: '/verification/{hipchat}/',
     handler: Verification,
     config: {
+      validate: {
+        query: {
+          id: Joi.required(),
+        }
+      }
     }
   }
 ]

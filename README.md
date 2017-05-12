@@ -1,6 +1,6 @@
 # Lighthouse Report
 
-> Create automatic performance reports using <a href="https://webpagetest.org">webpagetest</a> and <a href="https://github.com/GoogleChrome/lighthouse>Lighthouse</a>
+> Create automatic performance reports using <a href="https://webpagetest.org">webpagetest</a> and <a href="https://github.com/GoogleChrome/lighthouse">Lighthouse</a>
 
 This small app allows you to integreate a performance report with <a href="https://www.hipchat.com/">HipChat</a>, so you can keep track how well your site is doing on performance.
 

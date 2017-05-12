@@ -1,6 +1,6 @@
 {
-  "name": "lighthouse",
-  "version": "0.0.1",
+  "name": "lighthouse-reporter",
+  "version": "1.0.1",
   "description": "Use Lighthouse as a reporter, send notifications on hipchat",
   "main": "index.js",
   "scripts": {

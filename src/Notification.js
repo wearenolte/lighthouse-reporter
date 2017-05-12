@@ -2,15 +2,21 @@ const Hipchat = require('./Hipchat');
 const hipchat = new Hipchat( process.env.HIPCHAT_KEY || '' );
 
 const STATUS = {
-  Started: 'lozenge-current',
+  Started: 'lozenge-moved',
   Completed: 'lozenge-success',
+  Good: 'lozenge-success',
   Error: 'lozenge-error',
+  Fail: 'lozenge-error',
+  Avarage: 'lozenge-current',
 }
 
 const Colors = {
-  Started: 'yellow',
+  Started: 'gray',
   Completed: 'green',
+  Good: 'green',
   Error: 'red',
+  Fail: 'red',
+  Avarage: 'yellow',
 }
 
 async function Notification( options ) {
@@ -22,7 +28,10 @@ async function Notification( options ) {
       message: 'Reporter message',
       color: Colors[status],
       card: {
-        description: options.description,
+        description: {
+          value: options.description,
+          format: 'html',
+        },
         url: options.url,
         attributes: [{
           label: 'Status',

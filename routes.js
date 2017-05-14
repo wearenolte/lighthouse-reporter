@@ -1,5 +1,5 @@
 const Reporter = require('./src/Reporter');
-const PostReporter = require('./src/PostReporter');
+const PostReporter = require('./src/PostReport');
 const Verification = require('./src/Verification');
 const Joi = require('joi');
 

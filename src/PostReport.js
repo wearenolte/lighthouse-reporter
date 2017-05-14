@@ -7,3 +7,5 @@ function PostReporter( request, reply ) {
     message_format: 'text',
   })
 }
+
+module.exports = PostReporter;

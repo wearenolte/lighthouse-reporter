@@ -16,7 +16,8 @@
     "joi": "^10.4.1",
     "lodash": "^4.17.4",
     "node-fetch": "^1.6.3",
-    "uniqid": "^4.1.1"
+    "uniqid": "^4.1.1",
+    "valid-url": "^1.0.9"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"

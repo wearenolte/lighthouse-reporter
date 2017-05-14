@@ -1,4 +1,5 @@
 const Reporter = require('./src/Reporter');
+const PostReporter = require('./src/PostReporter');
 const Verification = require('./src/Verification');
 const Joi = require('joi');
 
@@ -16,6 +17,11 @@ module.exports = [
       }
     }
   }, 
+  {
+    method: 'POST',
+    path: '/report/',
+    handler: PostReporter,
+  },
   {
     method: 'GET',
     path: '/verification/{hipchat}/',

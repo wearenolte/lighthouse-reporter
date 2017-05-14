@@ -24,7 +24,7 @@ module.exports = [
     config: {
       validate: {
         payload: Joi.object().keys({
-          item: Joi.object.required(),
+          item: Joi.object().required(),
         }),
       }
     }

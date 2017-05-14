@@ -21,6 +21,13 @@ module.exports = [
     method: 'POST',
     path: '/report/',
     handler: PostReporter,
+    config: {
+      validate: {
+        payload: Joi.object().keys({
+          item: Joi.object.required(),
+        }),
+      }
+    }
   },
   {
     method: 'GET',

@@ -7,7 +7,7 @@ const STATUS = {
   Good: 'lozenge-success',
   Error: 'lozenge-error',
   Fail: 'lozenge-error',
-  Avarage: 'lozenge-current',
+  Average: 'lozenge-current',
 }
 
 const Colors = {
@@ -16,7 +16,7 @@ const Colors = {
   Good: 'green',
   Error: 'red',
   Fail: 'red',
-  Avarage: 'yellow',
+  Average: 'yellow',
 }
 
 async function Notification( options ) {

@@ -3,7 +3,7 @@ const fetch = require('node-fetch'); // polyfill
 
 const SCORE = {
   GOOD: 75,
-  AVARAGE: 45,
+  AVERAGE: 45,
 }
 
 async function sendNotification( total = 0, url, hipchat, report ) {
@@ -16,8 +16,8 @@ async function sendNotification( total = 0, url, hipchat, report ) {
 
   if ( total >= SCORE.GOOD ) {
     notificationOpts.status = 'Good';
-  } else if ( total >= SCORE.AVARAGE ) {
-    notificationOpts.status = 'Avarage';
+  } else if ( total >= SCORE.AVERAGE ) {
+    notificationOpts.status = 'Average';
   } else {
     notificationOpts.status = 'Fail';
   }
